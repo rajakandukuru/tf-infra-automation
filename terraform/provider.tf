@@ -6,12 +6,14 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "******"
-    key = "******"
-    region = "ap-south-1"
+    bucket = "intso-education"
+    key = "backend"
+    region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
+  access_key = "AKIAZI2LCYQIIO6X2JT3"
+  secret_key = "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"
 }
